@@ -6,9 +6,11 @@ import './httpRequestForm.css';
 
 const httpMethodOptions = [{ value: 'GET' }, { value: 'POST' }];
 
-const HttpRequestForm = () => {
-  const [url, setURL] = useState('localhost');
+const HttpRequestForm = ({ handleFormSubmit }) => {
+  const [url, setURL] = useState('http://localhost');
   const [method, setMethod] = useState('GET');
+
+  const request = { url, method };
 
   return (
     <div className='http-request-form'>
@@ -26,19 +28,16 @@ const HttpRequestForm = () => {
         change={setMethod}
       />
 
-      <Input id={'header-input'} label={'Headers'} />
       <code className='request-preview'>
         <p>url: {url}</p>
         <p>method: {method}</p>
-        <p>
-          headers:{' '}
-          {`{
-           headers
-        }`}
-        </p>
         {method !== 'GET' && <p>body:</p>}
       </code>
-      <Button label={'Send HTTP Request'} />
+      <Button
+        label={'Send HTTP Request'}
+        clicked={handleFormSubmit}
+        request={request}
+      />
     </div>
   );
 };

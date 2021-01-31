@@ -3,7 +3,7 @@ import React from 'react';
 const dropdown = ({ name, options, label, change }) => {
   return (
     <>
-      <label for={name}>{label}</label>
+      <label htmlFor={name}>{label}</label>
       <select
         name={name}
         id={name}
@@ -12,7 +12,11 @@ const dropdown = ({ name, options, label, change }) => {
         }}
       >
         {options.map((option) => {
-          return <option value={option.value}>{option.value}</option>;
+          return (
+            <option value={option.value} key={option.value}>
+              {option.value}
+            </option>
+          );
         })}
       </select>
     </>

@@ -19,3 +19,7 @@
   justify-content: space-evenly;
   text-align: left;
 }
+
+.main section {
+  max-width: 50%;
+}

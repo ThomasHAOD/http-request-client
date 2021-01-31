@@ -7773,6 +7773,11 @@ parse-asn1@^5.0.0, parse-asn1@^5.1.5:
     pbkdf2 "^3.0.3"
     safe-buffer "^5.1.1"
 
+parse-http-header@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/parse-http-header/-/parse-http-header-1.0.1.tgz#791dcf6706ab299640db8bc427f80087d8188d58"
+  integrity sha512-xOoH7vzokDoenX4e3c+4ik8lf30kq9Pawq20TH5uq3RURsIJquqFTE0gS7OAEE6nvMQzuP5OXxubYuN7YLsTiw==
+
 parse-json@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-2.2.0.tgz#f480f40434ef80741f8469099f8dea18f55a4dc9"
