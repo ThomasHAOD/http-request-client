@@ -34,7 +34,7 @@ function App() {
             <HTTPRequestForm handleFormSubmit={handleFormSubmit} />
           </section>
           <section className='response'>
-            <h2>Response</h2>
+            <h2>Response Body</h2>
             <code>{response}</code>
           </section>
         </main>
