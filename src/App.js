@@ -1,22 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import HTTPRequestForm from './components/httpRequestForm/httpRequestForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <h1>Welcome to HTTP Requester</h1>
+        <main className='main'>
+          <section className='request'>
+            <h2>Request</h2>
+
+            <HTTPRequestForm />
+          </section>
+          <section>
+            <h2>Response</h2>
+          </section>
+        </main>
       </header>
     </div>
   );

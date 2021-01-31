@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# HTTP Request Client
+
+This project provides the ability to sent HTTP requests and see responses similarly to the Postman client, but from the browser so the differences can be compared.
+
+It is designed to be useful when teaching basic web security concepts.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
