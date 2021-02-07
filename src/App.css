@@ -23,3 +23,7 @@
 .main section {
   max-width: 50%;
 }
+
+.response {
+  word-wrap: break-word;
+}
