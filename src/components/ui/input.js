@@ -7,6 +7,7 @@ const input = ({ label, type = 'text', id, value, change }) => {
       <input
         id={id}
         name={id}
+        style={{ fontSize: '30px' }}
         type={type}
         value={value}
         onChange={(event) => {

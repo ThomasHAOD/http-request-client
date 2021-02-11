@@ -7,13 +7,18 @@ const dropdown = ({ name, options, label, change }) => {
       <select
         name={name}
         id={name}
+        style={{ fontSize: '30px' }}
         onChange={(event) => {
           change(event.target.value);
         }}
       >
         {options.map((option) => {
           return (
-            <option value={option.value} key={option.value}>
+            <option
+              style={{ fontSize: '30px' }}
+              value={option.value}
+              key={option.value}
+            >
               {option.value}
             </option>
           );

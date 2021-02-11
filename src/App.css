@@ -24,6 +24,11 @@
   max-width: 50%;
 }
 
+.request {
+  width: 400px;
+}
+
 .response {
   word-wrap: break-word;
+  width: 400px;
 }
