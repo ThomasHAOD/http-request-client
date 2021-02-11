@@ -6,7 +6,7 @@ function App() {
   const [response, setResponse] = useState('awaiting response');
   const [body, setBody] = useState(`{"greeting": "hello"}`);
 
-  const handleFormSubmit = async ({ url, method, headers, body }) => {
+  const handleFormSubmit = async ({ url, method }) => {
     if (method === 'GET') {
       try {
         const res = await fetch(url);
@@ -18,8 +18,15 @@ function App() {
       return;
     }
     try {
-      const res = await fetch(url, { method, headers, body });
-      setResponse(res);
+      const res = await fetch(url, {
+        method,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: body,
+      });
+      const data = await res.json();
+      setResponse(JSON.stringify(data));
     } catch (error) {
       console.log(error);
     }

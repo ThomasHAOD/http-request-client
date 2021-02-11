@@ -7,7 +7,7 @@ import './httpRequestForm.css';
 const httpMethodOptions = [{ value: 'GET' }, { value: 'POST' }];
 
 const HttpRequestForm = ({ handleFormSubmit, setBody, body }) => {
-  const [url, setURL] = useState('http://localhost');
+  const [url, setURL] = useState('http://localhost:8080');
   const [method, setMethod] = useState('GET');
 
   const request = { url, method };
